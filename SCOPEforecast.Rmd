@@ -1,0 +1,58 @@
+---
+title: "SCOPE forecast"
+output:
+  html_document: default
+---
+Here are the current conditions and 24-, 48-, and 72-hour forecasts for the area where SCOPE will be operating.  
+
+### Current conditions
+```{r, echo=FALSE}
+rotate90 <- "style='transform:rotate(90deg);'"
+```
+
+```{r out.extra=rotate90, echo=FALSE}
+sfc_map <- "https://tgftp.nws.noaa.gov/fax/PPBA11.gif"
+knitr::include_graphics(sfc_map)
+```
+
+```{r, echo=FALSE}
+sfc_seas <- "https://tgftp.nws.noaa.gov/fax/PJFB10.gif"
+satellite <- "https://tgftp.nws.noaa.gov/fax/evpz11.jpg"
+knitr::include_graphics(sfc_seas)
+knitr::include_graphics(satellite)
+```
+
+### 24-hour forecast
+```{r, echo=FALSE}
+sfc_24hr <- "https://tgftp.nws.noaa.gov/fax/PYFE11.gif"
+seas_24hr <- "https://tgftp.nws.noaa.gov/fax/PWFE11.gif"
+knitr::include_graphics(sfc_24hr)
+knitr::include_graphics(seas_24hr)
+```
+
+### 48-hour forecast
+```{r, echo=FALSE}
+sfc_48hr <- "https://tgftp.nws.noaa.gov/fax/PYFI11.gif"
+seas_48hr <- "https://tgftp.nws.noaa.gov/fax/PJFI10.gif"
+knitr::include_graphics(sfc_48hr)
+knitr::include_graphics(seas_48hr)
+```
+
+### 72-hour forecast
+```{r, echo=FALSE}
+sfc_72hr <- "https://tgftp.nws.noaa.gov/fax/PYFK11.gif"
+seas_72hr <- "https://tgftp.nws.noaa.gov/fax/PJFK10.gif"
+knitr::include_graphics(sfc_72hr)
+knitr::include_graphics(seas_72hr)
+```
+
+### References
+You can find the full list of Pacific forecast product links at <https://www.weather.gov/media/marine/rfaxhi.txt> and
+<https://www.weather.gov/marine/hawaiilatest> (different versions of the same info).  
+  
+A guide for map symbols is available at <https://www.nhc.noaa.gov/images/Graphical_Prod_Legend.jpg>.   
+  
+A detailed description of each of the maps is available at <https://ocean.weather.gov/UsersGuide/UGprint.php>.  
+  
+You can get an expanded package of maps at
+<https://www.weather.gov/marine/hawaiibrief#>.  
